@@ -32,14 +32,29 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'foundation-rails', "~> 5.2.0.0"
+
+group :development do 
+	gem 'guard-livereload', require: false
+	gem 'better_errors'
+	gem 'binding_of_caller'
+	gem 'rack-livereload'
+	gem 'pry'
+	gem 'pry-rails'
+end
+
+group :deployment do
+	# Use Capistrano for deployment
+	gem 'capistrano','~> 3.1.0'
+	gem 'capistrano-rails', '~> 1.1.0'
+	gem 'capistrano-bundler'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
 # gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
