@@ -207,7 +207,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   paperclip (~> 4.1)
-  pg
+  pg (~> 0.17.1)
   pry
   pry-rails
   rack-livereload
