@@ -1,21 +1,53 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
 
-//Import Josefin Sans
-
-body {
-	font-family: 'Josefin Sans', sans-serif;
-}
 
 .panel#intro {
 	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .panel#slider {
 	width: 450px;
+	margin-left: auto;
+	margin-right: auto; 
 }
 
 .row#home {
 	margin-top: 100px;
+}
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	@media screen and (max-width: 500px) {
+		background-color: #000;
+	}
+}
+
+ul.right {
+	background-color: #000;
+}
+
+h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: normal;
+}
+
+/* large displays */
+
+@media screen and (max-width: 64.0643em) {
+	.top-bar {
+		display: none;
+	}
+}
+
+/* small displays */
+
+@media screen and (min-width: 64.0643em) {
+	.tab-bar {
+		display: none;
+	}
 }
