@@ -15,9 +15,6 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
@@ -30,12 +27,21 @@ gem 'jbuilder', '~> 1.2'
 # Easy attachment of images to library for ActiveRecord 
 gem "paperclip", "~> 4.1"
 
+# Use ActiveModel has_secure_password
+	gem 'bcrypt-ruby', '~> 3.1.2'
+
+# Use unicorn as the app server
+	gem 'unicorn'
+
+# Use simple_form for its DSL for easy form building!
+	gem 'simple_form', '~> 3.0.1'
+
+	gem 'foundation-rails', "~> 5.2.0.0"
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
-gem 'foundation-rails', "~> 5.2.0.0"
 
 group :development do 
 	gem 'guard-livereload', require: false
@@ -53,11 +59,8 @@ group :deployment do
 	gem 'capistrano-bundler'
 end
 
-# Use ActiveModel has_secure_password
-	gem 'bcrypt-ruby', '~> 3.1.2'
-
-# Use unicorn as the app server
-	gem 'unicorn'
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+# gem 'therubyracer', platforms: :ruby
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
