@@ -50,6 +50,7 @@ group :development do
 	gem 'rack-livereload'
 	gem 'pry'
 	gem 'pry-rails'
+	gem 'debugger'
 end
 
 group :deployment do
@@ -61,6 +62,3 @@ end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
