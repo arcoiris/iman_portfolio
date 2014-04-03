@@ -19,37 +19,5 @@
 }
 
 .row#home {
-	margin-top: 100px;
-}
-
-body {
-	font-family: 'Josefin Sans', sans-serif;
-	background-color: #EDECE2;
-	background-image: url("string.png");
-	background-repeat: no-repeat;
-	}
-
-ul.right {
-	background-color: #000;
-}
-
-h1 {
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: normal;
-}
-
-/* large displays */
-
-@media screen and (max-width: 64.0643em) {
-	.top-bar {
-		display: none;
-	}
-}
-
-/* small displays */
-
-@media screen and (min-width: 64.0643em) {
-	.tab-bar {
-		display: none;
-	}
+	margin-top: 25px;
 }
