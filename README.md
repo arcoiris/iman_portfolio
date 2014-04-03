@@ -1,7 +1,7 @@
 Iman's Portfolio
 ================
-Using: 
+Uses: 
 - ImageMagick 
 - Comfy Mexican Sofa (CMS)
-- Paperclip (photo uploading)
+- Paperclip (photo attachment tool)
 - Foundation (web framework)
