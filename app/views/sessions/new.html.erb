@@ -2,15 +2,24 @@
 	<div class="small-4 column">
 		<div class="panel">
 			<h1>Sign in</h1>
+
+			<% if @flash %>
+				<div data-alert class="alert-box info radius">
+					<%= @flash %>
+				</div>
+			<% end %>
+
 			<%= form_for(:session, url: sessions_path) do |f| %> 
 				<%= f.label :email %>
 				<%= f.text_field :email %>
 
 				<%= f.label :password %>
 				<%= f.password_field :password %>
-
+					
 				<%= f.submit "Sign in", class: "button" %>
 			<% end %>
+
+			<p><%= link_to "forgotten password?", new_password_reset_path %> </p>
 		</div>
 	</div>
 </div>

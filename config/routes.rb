@@ -2,7 +2,8 @@ ImanPortfolio::Application.routes.draw do
   resources :users, only: [:new, :create, :edit, :update, :destroy]
   resources :sessions, only: [:new, :create, :destroy] 
 
-  get "admin", to: "sessions#new"
+  get "admin", to: 'sessions#new'
+  get "logout", to: 'sessions#destroy'
   get "users/new"
   get "users/create"
   get "users/edit"

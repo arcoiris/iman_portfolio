@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "Iman J. Brown | Model" %></title>
+    <title><%= full_title(yield(:title)) %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
@@ -12,6 +12,7 @@
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body>
+
 		<nav class="top-bar" data-topbar>
 			<ul class="title-area">
 				<li class="name">
@@ -45,6 +46,13 @@
 						<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
 					</section>
 				</nav>
+
+				<% if current_user %> 
+					<div data-alert class="alert-box info radius">
+						Currently logged in as <%= current_user.email %>
+						<%= link_to "Log out", logout_path %>
+					</div>
+				<% end %>
 
 				<aside class="left-off-canvas-menu">
 					<ul class="off-canvas-list">
