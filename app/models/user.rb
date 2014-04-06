@@ -18,7 +18,7 @@ class User < ActiveRecord::Base
 	def generate_token(column)
 		begin
 			self[column] = SecureRandom.urlsafe_base64
-		end while User.find_by_password_reset_token(self[column])
+		end while User.find_by(column.to_sym => self[column])
 	end
 end
 
