@@ -60,6 +60,11 @@
 					</div>
 				<% end %>
 
+				<% if flash[:alert] %>
+					<div data-alert class="alert-box warning round">
+						<%= flash[:alert] %>
+					</div>
+				<% end %>
 				<aside class="left-off-canvas-menu">
 					<ul class="off-canvas-list">
 						<li><%= link_to("Editorial", '#') %></li>
