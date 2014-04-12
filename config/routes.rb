@@ -8,6 +8,7 @@ ImanPortfolio::Application.routes.draw do
   get "users/edit"
   get "users/update"
   get "users/destroy"
+  get "users/dashboard"
 
   resources :users, only: [:new, :create, :edit, :update, :destroy]
   resources :sessions, only: [:new, :create, :destroy] 
