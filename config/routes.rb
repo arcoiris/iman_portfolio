@@ -9,6 +9,7 @@ ImanPortfolio::Application.routes.draw do
   get "users/update"
   get "users/destroy"
 
+  resources :admin, only: [:index]
   resources :users, only: [:new, :create, :edit, :update, :destroy]
   resources :sessions, only: [:new, :create, :destroy] 
   resources :password_resets

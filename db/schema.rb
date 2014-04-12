@@ -32,5 +32,4 @@ ActiveRecord::Schema.define(version: 20140404034930) do
     t.string   "password_reset_token"
     t.datetime "password_reset_sent_at"
   end
-
 end
