@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="small-4 small-centered column">
+		<div class="panel">
+			<%= simple_form_for(@static_content) do |f| %>
+ 				<%= f.input :about %>
+ 				<%= f.input :contact_email %>
+ 				<%= f.input :contact_number %>
+ 				<%= f.input :contact_blurb %>
+ 				<%= f.button :submit, "Update!", class: "button" %>
+			<% end %>
+ 		</div>
+ 	</div>
+ </div>

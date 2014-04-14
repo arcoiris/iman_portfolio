@@ -10,6 +10,7 @@ ImanPortfolio::Application.routes.draw do
   get "users/destroy"
   get "users/dashboard"
 
+  resources :static_contents, only: [:edit, :update, :index]
   resources :users, only: [:new, :create, :edit, :update, :destroy]
   resources :sessions, only: [:new, :create, :destroy] 
   resources :password_resets
