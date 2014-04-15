@@ -19,3 +19,13 @@ body {
 		display: none;
 	}
 }
+
+
+/* masonry photo sizing */
+
+.item { 
+	width: 50%;
+	padding: .5em
+}
+
+.item.w2 { width: 75%;}
