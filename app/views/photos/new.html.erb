@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="small-6  small-centered column">
+		<div class="panel">
+			<%= simple_form_for @photo, html: { multipart: true } do |f| %>
+				 <%= f.input :photo, type: :file %>
+				 <%= f.input :photographer %>
+				 <%= f.input :caption, as: :text %>
+				 <%= f.input :photo_type, collection: @photo_type, as: :select %>
+				 <%= submit_tag "Upl oad photo", class: "button" %>
+			 <% end %>
+		</div>
+	</div>
+</div>
