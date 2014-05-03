@@ -38,8 +38,7 @@ gem "paperclip", "~> 4.1"
 
 	gem 'foundation-rails', "~> 5.2.0.0"
 
-	gem 'activeadmin', github: 'gregbell/active_admin'
-
+	gem 'rails_admin', '~> 0.6.2'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

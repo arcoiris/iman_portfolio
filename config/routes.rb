@@ -1,4 +1,5 @@
 ImanPortfolio::Application.routes.draw do
+  mount RailsAdmin::Engine => '/dashboard', as: 'rails_admin'
   root 'home#index'
 
   get "admin", to: 'sessions#new'
