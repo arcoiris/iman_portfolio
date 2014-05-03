@@ -5,8 +5,8 @@
 				 <%= f.input :photo, type: :file %>
 				 <%= f.input :photographer %>
 				 <%= f.input :caption, as: :text %>
-				 <%= f.input :photo_type, collection: @photo_type, as: :select %>
-				 <%= submit_tag "Upl oad photo", class: "button" %>
+				 <%= f.input :photo_type, collection: { Editorial: 0, Runway: 1}, @photo_type, as: :select %>
+				 <%= submit_tag "Upload photo", class: "button" %>
 			 <% end %>
 		</div>
 	</div>

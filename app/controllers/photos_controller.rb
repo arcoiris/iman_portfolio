@@ -6,7 +6,6 @@ class PhotosController < ApplicationController
 	end
 
 	def new
-		@photo_type = { Editorial: 0, Runway: 1}
 		@photo = Photo.new
 	end
 
@@ -30,6 +29,7 @@ class PhotosController < ApplicationController
 	end
 
 	def editorial
+		@photos = Photo.editorial
 	end
 
 	def runway

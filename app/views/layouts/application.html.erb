@@ -35,7 +35,7 @@
 			<% if current_user %>
 				<ul class="left">
 					<li class="editorial">
-						<%= link_to("Dashboard", users_dashboard_path) %>
+						<%= link_to("Dashboard", rails_admin.dashboard_path) %>
 					</li>
 				</ul>
 			<% end %>
@@ -88,7 +88,7 @@
 				<% end %>
 				<aside class="left-off-canvas-menu">
 					<ul class="off-canvas-list">
-						<li><%= link_to("Editorial", '#') %></li>
+						<li><%= link_to("Editorial", editorial_path) %></li>
 						<li><%= link_to("Runway", '#') %></li>
 						<li><%= link_to("Events", '#') %></li>
 						<li><%= link_to("Contact", '#') %></li>

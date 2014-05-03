@@ -30,5 +30,10 @@ RailsAdmin.config do |config|
     ## With an audit adapter, you can add:
     # history_index
     # history_show
+
+    config.authorize_with do
+      user = User.find_by(email: params[:session][:email].downcase)
+      user.authorize
+    end
   end
 end
