@@ -32,8 +32,9 @@ RailsAdmin.config do |config|
     # history_show
 
     config.authorize_with do
-      user = User.find_by(email: params[:session][:email].downcase)
-      user.authorize
+      if current_user.nil?
+        redirect_to main_app.admin_url
+      end
     end
   end
 end
