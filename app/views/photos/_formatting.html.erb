@@ -1,20 +1,7 @@
-<% size = @photos.size %>
-<% amt_of_rows = size / 3 %>
-<% amt_of_rows += 1 if (size % 3) > 0 %>
-<% last_row = amt_of_rows - 1 %>
-<% start = 0 %> 
-<% last = 2 %>
-
-<!-- Display photos in rows of 3 -->
-<% amt_of_rows.times do |row_index| %>
-	<div class="row">
-		<% @photos[start..last].each do |photo| %>
-			<div class="small-4 column">
-				<%= image_tag photo.photo.url(:medium) %>
-			</div>
+<div class="row">
+	<ul class="small-block-grid-2 large-block-grid-3" data-clearing>
+		<% @photos.each do |photo| %>
+			<li><%= image_tag photo.photo.url %></li>
 		<% end %>
-	</div>
-	<% start += 3 %>
-	<% last += 3 unless row_index == last_row %>
-	<% last = size - 1 if row_index == last_row %>
-<% end %>
+	</ul>
+</div>
