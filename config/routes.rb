@@ -5,6 +5,7 @@ ImanPortfolio::Application.routes.draw do
   get "admin", to: 'sessions#new'
   get "logout", to: 'sessions#destroy'
   get "editorial", to: 'photos#editorial'
+  get "runway", to: 'photos#runway'
   get "users/new"
   get "users/create"
   get "users/edit"

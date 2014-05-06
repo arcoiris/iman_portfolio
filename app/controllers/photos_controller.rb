@@ -33,5 +33,6 @@ class PhotosController < ApplicationController
 	end
 
 	def runway
+		@photos = Photo.runway
 	end
 end

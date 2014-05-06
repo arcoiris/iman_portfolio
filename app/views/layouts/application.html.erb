@@ -34,7 +34,7 @@
 			<!-- Left Nav Section -->	
 			<% if current_user %>
 				<ul class="left">
-					<li class="editorial">
+					<li class="dashboard">
 						<%= link_to("Dashboard", rails_admin.dashboard_path) %>
 					</li>
 				</ul>
@@ -47,7 +47,7 @@
 						<%= link_to("Editorial", editorial_path) %>
 					</li>
 					<li class="runway">
-						<%= link_to("Runway", '#') %>				
+						<%= link_to("Runway", runway_path) %>				
 					</li>
 					<li class="events">
 						<%= link_to("Events", '#') %>
@@ -89,7 +89,7 @@
 				<aside class="left-off-canvas-menu">
 					<ul class="off-canvas-list">
 						<li><%= link_to("Editorial", editorial_path) %></li>
-						<li><%= link_to("Runway", '#') %></li>
+						<li><%= link_to("Runway", runway_path) %></li>
 						<li><%= link_to("Events", '#') %></li>
 						<li><%= link_to("Contact", '#') %></li>
 					</ul>
