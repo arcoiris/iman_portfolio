@@ -30,7 +30,7 @@ RailsAdmin.config do |config|
     ## With an audit adapter, you can add:
     # history_index
     # history_show
-
+    
     config.authorize_with do
       if current_user.nil?
         redirect_to main_app.admin_url
