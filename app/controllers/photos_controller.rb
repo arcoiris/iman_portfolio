@@ -25,7 +25,6 @@ class PhotosController < ApplicationController
 	def destroy
 		@listing.destroy
 		flash[:alert] = "Successfully deleted photo!"
-		redirect_to_user_dashboard_path
 	end
 
 	def editorial

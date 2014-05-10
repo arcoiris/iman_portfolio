@@ -34,7 +34,7 @@
 			<!-- Left Nav Section -->	
 			<% if current_user %>
 				<ul class="left">
-					<li class="dashboard">
+					<li class="dashboard" data-no-turbolink>
 						<%= link_to("Dashboard", rails_admin.dashboard_path) %>
 					</li>
 				</ul>
@@ -53,7 +53,7 @@
 						<%= link_to("Events", '#') %>
 					</li>
 					<li class="contact">
-						<%= link_to("Contact", '#') %>
+						<%= link_to("Contact", contact_path) %>
 					</li>
 				</ul>
 		</section>
@@ -91,7 +91,7 @@
 						<li><%= link_to("Editorial", editorial_path) %></li>
 						<li><%= link_to("Runway", runway_path) %></li>
 						<li><%= link_to("Events", '#') %></li>
-						<li><%= link_to("Contact", '#') %></li>
+						<li><%= link_to("Contact", contact_path) %></li>
 					</ul>
 				</aside>
 

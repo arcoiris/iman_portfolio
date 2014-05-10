@@ -1,0 +1,19 @@
+<div class="row">
+	<div class="small-4 column">
+		<div class="panel">
+			<p><%= @contact_blurb %></p>
+			<p><%= @contact_email %></p>
+			<p><%= @contact_number %></p>
+		</div>
+	</div>
+
+	<div class="large-6 column">
+		<div class="panel">
+			<ul class="small-block-grid-2 small-block-grid-3" data-clearing>
+				<% @photos.each do |photo| %>
+					<li><%= image_tag photo.photo.url %></li>
+				<% end %>
+			</ul>		
+		</div>
+	</div>
+</div>
