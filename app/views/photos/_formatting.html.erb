@@ -1,7 +1,7 @@
 <div class="row">
 	<ul class="small-block-grid-2 large-block-grid-3" data-clearing>
 		<% @photos.each do |photo| %>
-			<li><%= image_tag photo.photo.url %></li>
+			<li><%= image_tag photo.photo.url(:medium)%></li>
 		<% end %>
 	</ul>
 </div>

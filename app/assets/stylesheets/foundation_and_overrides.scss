@@ -768,9 +768,11 @@ $tabbar-menu-icon-color: #000;
 // $include-html-panel-classes: $include-html-classes;
 
 // We use these to control the background and border styles
- $panel-bg: scale-color(#EDECE2, $lightness: -5%);
+ 
+ $panel-bg: #ebfdd4;
+// $panel-bg: scale-color(#ebfdd4, $lightness: -5%);
 // $panel-border-style: solid;
-// $panel-border-size: 1px;
+$panel-border-size: 0px;
 
 // We use this % to control how much we darken things on hover
 // $panel-function-factor: -11%;
@@ -1129,7 +1131,7 @@ $tabbar-menu-icon-color: #000;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
- $topbar-bg-color: #EDECE2;
+ $topbar-bg-color: #ebfdd4;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
