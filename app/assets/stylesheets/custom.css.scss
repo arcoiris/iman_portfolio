@@ -1,6 +1,6 @@
 body {
 	background-color: #EDECE2;
-	background-image: url("congruent_pentagon.png");
+	background-image: url("dirty_old_shirt.png");
 	background-repeat: repeat;
 }
 
@@ -35,4 +35,12 @@ body {
 }
 .clearing-blackout li {
   clear:inherit!important;
+}
+
+.item {
+  margin-bottom: 0.5rem;
+}
+
+.panel {
+	background-color: grey;
 }

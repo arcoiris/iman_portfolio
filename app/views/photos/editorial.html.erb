@@ -1,1 +1,7 @@
-<%= render "formatting" %>
+<div class="row">
+	<ul class="small-block-grid-2 large-block-grid-3">
+		<% @photos.each do |photo| %>
+			<%= image_tag photo.photo.url(:medium) %>
+		<% end %>
+	</ul>
+</div>
