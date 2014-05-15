@@ -29,6 +29,7 @@ class PhotosController < ApplicationController
 
 	def editorial
 		@photos = Photo.editorial
+		@photo = Photo.first.photo.url
 	end
 
 	def runway

@@ -10,7 +10,7 @@
  *
  *= require_self
  *\= require foundation_and_overrides
- *= require swipebox.css
+ *= require swipebox
  *= require_tree .
  */
 

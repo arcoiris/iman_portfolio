@@ -13,9 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui-1.10.4.custom
-//= require jquery.swipebox
+//= require swipebox
 //= require foundation
 //= require turbolinks
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+$( '.swipebox' ).swipebox();
