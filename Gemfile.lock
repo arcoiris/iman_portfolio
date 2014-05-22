@@ -69,6 +69,8 @@ GEM
     eventmachine (1.0.3)
     execjs (2.0.2)
     ffi (1.9.3)
+    flexslider (2.2.0)
+      sass-rails (>= 3.1.0)
     font-awesome-rails (4.0.3.2)
       railties (>= 3.2, < 5.0)
     formatador (0.2.4)
@@ -242,6 +244,7 @@ DEPENDENCIES
   capistrano-bundler
   capistrano-rails (~> 1.1.0)
   coffee-rails (~> 4.0.0)
+  flexslider (~> 2.2.0)
   foundation-rails (~> 5.2.0.0)
   guard-livereload
   jbuilder (~> 1.2)

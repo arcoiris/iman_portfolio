@@ -1,0 +1,11 @@
+<div class="row">
+	<div class="small-6 small-centered column">
+		<div class="panel">
+			<% @events.each do |event| %>
+				<%= event.title %> </br>
+				<%= event.date.strftime("%m/%d/%y") %> </br>
+				<%= event.time.strftime("@ %l:%M") %> </br>
+				<%= event.description %> </br> 
+			<% end %>
+		</div>
+</div>

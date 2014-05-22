@@ -1,9 +1,9 @@
 <div class="row">
 	<ul class="small-block-grid-2 large-block-grid-3">
 		<% @photos.each do |photo| %>
-			<li><%= link_to photo.photo.url, class: "swipebox", title: "Photo by: #{photo.photographer}" do %>
+			<li><div class="panel"><%= link_to photo.photo.url, class: "swipebox", title: "Photo by: #{photo.photographer}" do %>
 					<%= image_tag(photo.photo.url(:medium)) %>
-			<% end %></li>
+			<% end %></div></li>
 		<% end %>
 	</ul>
 </div>

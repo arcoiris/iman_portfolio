@@ -1,4 +1,5 @@
 ImanPortfolio::Application.routes.draw do
+  get "events/index"
   mount RailsAdmin::Engine => '/dashboard', as: 'rails_admin'
   root 'home#index'
 

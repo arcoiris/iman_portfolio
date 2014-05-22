@@ -1,11 +1,7 @@
 body {
 	background-color: #EDECE2;
-	background-image: url("dirty_old_shirt.png");
-	background-repeat: repeat;
-}
-
-.box {
-	background-color: #EBFDD4;
+	background-image: url("cartographer.png");
+	background-repeat: repeat-x repeat-y;
 }
 
 /* large displays */
@@ -24,23 +20,14 @@ body {
 	}
 }
 
-/* setting Clearing thumbnails to be one row */
-[class*="block-grid-"] {
-  display: block!important;
-  margin: 0 -0.625em!important;
-  padding: 0!important;
-}
-[class*="block-grid-"] li {
-  margin-right:0!important;
-}
-.clearing-blackout li {
-  clear:inherit!important;
-}
-
 .item {
   margin-bottom: 0.5rem;
 }
 
 .panel {
-	background-color: grey;
+	background-color: rgba(255,255,255,0.3);
+}
+
+.slider-panel {
+	
 }
