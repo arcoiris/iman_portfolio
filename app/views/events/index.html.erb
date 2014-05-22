@@ -1,11 +1,21 @@
 <div class="row">
 	<div class="small-6 small-centered column">
-		<div class="panel">
-			<% @events.each do |event| %>
-				<%= event.title %> </br>
-				<%= event.date.strftime("%m/%d/%y") %> </br>
-				<%= event.time.strftime("@ %l:%M") %> </br>
-				<%= event.description %> </br> 
+		<h1>Upcoming Events:</h1>
+			<% @events.upcoming.each do |event| %>
+				<div class="panel">
+					<%= event.title %> </br>
+					<%= event.date.strftime("%m/%d/%y") %> </br>
+					<%= event.time.strftime("@ %l:%M") %> </br>
+					<%= event.description %> </br> 
+				</div>
 			<% end %>
-		</div>
+		<h1>Past Events:</h1>
+			<% @events.past.each do |event| %>
+				<div class="panel">
+					<%= event.title %> </br>
+					<%= event.date.strftime("%m/%d/%y") %> </br>
+					<%= event.time.strftime("@ %l:%M") %> </br>
+					<%= event.description %> </br> 
+				</div>
+		<% end %>
 </div>
