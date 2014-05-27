@@ -58,12 +58,18 @@ group :development do
 	gem 'pry-rails'
 end
 
-group :deployment do
-	# Use Capistrano for deployment
-	gem 'capistrano','~> 3.1.0'
-	gem 'capistrano-rails', '~> 1.1.0'
-	gem 'capistrano-bundler'
+group :production do
+	gem 'rails_12factor', group: :production
 end
+
+# group :deployment do
+# 	# Use Capistrano for deployment
+# 	gem 'capistrano','~> 3.1.0'
+# 	gem 'capistrano-rails', '~> 1.1.0'
+# 	gem 'capistrano-bundler'
+# end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+
+ruby "2.1.1"
