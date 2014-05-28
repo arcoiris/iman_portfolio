@@ -6,7 +6,7 @@ development:
   pool: 5
   timeout: 5000
   username: deborah
-  password: <%= ENV["IMAN_PORTFOLIO_PW"] %>
+  password: honorbrown25
 
 production:
   adapter: postgresql
