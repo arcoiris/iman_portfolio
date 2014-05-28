@@ -27,3 +27,5 @@ and the list goes on and on. Iman's professional status has
   Iman's elitesimage for their portfolios. 
   Behold \"The New Generation Iman\", full of faith, 
   confidence, innate beauty and elegance.", contact_email: "loveimanb@yahoo.com", contact_number: "718-100-8000", contact_blurb: "Contact me")
+
+puts "seeded"
