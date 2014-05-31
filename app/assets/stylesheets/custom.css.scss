@@ -2,7 +2,7 @@ body {
 	/* url(http://www.transparenttextures.com/patterns/cubes.png); */
 
 	background-color: #db4646;
-	background-image: url('image_1.jpeg');
+	background-image: url('dark_wood.png');
 	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
@@ -25,6 +25,11 @@ body {
 		height: 770px;
 	}
 
+	#about {
+		line-height: 30px;
+		padding-top: 20px;
+	}
+	
 	#slider-panel {
 		height: 770px;
 	}
