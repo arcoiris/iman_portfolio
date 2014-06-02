@@ -60,7 +60,9 @@ end
 
 group :production do
 	gem 'rails_12factor', group: :production
+	gem 'newrelic_rpm'
 end
+
 
 # group :deployment do
 # 	# Use Capistrano for deployment
@@ -73,3 +75,4 @@ end
 # gem 'therubyracer', platforms: :ruby
 
 ruby "2.1.1"
+
