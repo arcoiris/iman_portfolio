@@ -74,5 +74,5 @@ end
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-ruby "2.1.1"
+
 
