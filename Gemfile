@@ -31,7 +31,7 @@ gem "paperclip", "~> 4.1"
 	gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
-	gem 'unicorn'
+	# gem 'unicorn'
 
 # Use simple_form for its DSL for easy form building!
 	gem 'simple_form', '~> 3.0.1'
@@ -60,15 +60,15 @@ end
 
 group :production do
 	gem 'rails_12factor', group: :production
-	gem 'newrelic_rpm'
 end
 
 
  group :deployment do
  	# Use Capistrano for deployment
  	gem 'capistrano','~> 3.1.0'
- 	gem 'capistrano-rails', '~> 1.1.0'
- 	gem 'capistrano-bundler'
+	gem 'capistrano-bundler', '~> 1.1.2'
+	gem 'capistrano-rails', '~> 1.1.1'
+  gem 'capistrano-rbenv', github: "capistrano/rbenv"
  end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
