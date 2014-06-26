@@ -769,7 +769,7 @@ $tabbar-menu-icon-color: #000;
 
 // We use these to control the background and border styles
  
- $panel-bg: #ebfdd4;
+// $panel-bg: #ebfdd4;
 // $panel-bg: scale-color(#ebfdd4, $lightness: -5%);
 // $panel-border-style: solid;
 $panel-border-size: 0px;
@@ -783,7 +783,7 @@ $panel-border-size: 0px;
 // $panel-padding: rem-calc(20);
 
 // We use these to set default font colors
-// $panel-font-color: #333;
+ $panel-font-color: #FFF;
 // $panel-font-color-alt: #fff;
 
 // $panel-header-adjust: true;
@@ -1131,7 +1131,7 @@ $panel-border-size: 0px;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
- $topbar-bg-color: rgba(200,200,200,0.9);
+$topbar-bg-color: rgba(0,0,0,0.9);
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1152,14 +1152,14 @@ $panel-border-size: 0px;
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
- $topbar-link-color: #000;
- $topbar-link-color-hover: #87D787;
+ $topbar-link-color: #FFF;
+// $topbar-link-color-hover: #87D787;
 // $topbar-link-color-active: #fff;
 // $topbar-link-color-active-hover: #fff;
 // $topbar-link-weight: normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
- $topbar-link-bg-hover: #ED9494;
+// $topbar-link-bg-hover: #ED9494;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
  $topbar-link-font-family: 'Josefin Sans', sans-serif;

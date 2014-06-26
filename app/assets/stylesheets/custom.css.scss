@@ -1,12 +1,19 @@
 body {
-	/* url(http://www.transparenttextures.com/patterns/cubes.png); */
-
-	background-color: #db4646;
-	background-image: url('dark_wood.png');
-	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+	background-image: url('splatter.jpg');
 }
 
-/* large displays */
+.panel {
+	background-color: rgba(0,0,0,0.8);
+}
+
+#about p {
+	padding: 20px;
+	text-align: justify;
+}
+
+
+/* small displays */
+
 
 @media screen and (max-width: 64.0643em) {
 	.top-bar {
@@ -14,32 +21,22 @@ body {
 	}
 }
 
-/* small displays */
+
+/* large displays */
 
 @media screen and (min-width: 64.0643em) {
 	.tab-bar {
 		display: none;
 	}
 
-	#text {
+	#about {
+		line-height: 30px;
+		padding: 20px;
 		height: 770px;
 	}
 
-	#about {
-		line-height: 30px;
-		padding-top: 20px;
-	}
-	
 	#slider-panel {
 		height: 770px;
 	}
 }
 
-.item {
-  margin-bottom: 0.5rem;
-}
-
-.panel {
-	background-color: rgba(255,255,255,0.8);
-}
- 
