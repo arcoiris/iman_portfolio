@@ -3,7 +3,7 @@ lock '3.1.0'
 
 set :application,'iman_portfolio'
 set :scm, 'git'
-set :repo_url, 'https://github.com/arcoiris/iman_portfolio.git'
+set :repo_url, 'git@github.com:arcoiris/iman_portfolio.git'
 
 set :branch, 'master'
 set :deploy_to, '/home/deploy/iman_portfolio'
