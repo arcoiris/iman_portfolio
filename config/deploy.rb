@@ -2,10 +2,13 @@
 lock '3.1.0'
 
 set :application,'iman_portfolio'
-set :repo_url, 'git@github.com:arcoiris/iman_portfolio.git'
+set :scm, 'git'
+set :repo_url, 'https://github.com/arcoiris/iman_portfolio.git'
 
+set :branch, 'master'
 set :deploy_to, '/home/deploy/iman_portfolio'
 
+set :linked_files, %w{config/database.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 namespace :deploy do

@@ -1,5 +1,10 @@
 body {
+	color: #FFF; /* Panel text is still partially controlled by the foundation variables*/
 	background-image: url('splatter.jpg');
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: white;
 }
 
 .panel {
@@ -9,6 +14,10 @@ body {
 #about p {
 	padding: 20px;
 	text-align: justify;
+}
+
+.icon-bar {
+	float: left;
 }
 
 
