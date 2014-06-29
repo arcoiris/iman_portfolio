@@ -5,16 +5,17 @@
 				<div class="panel">
 					<%= event.title %> </br>
 					<%= event.date.strftime("%m/%d/%y") %> </br>
-					<%= event.time.strftime("@ %l:%M") %> </br>
+					<%= event.time.strftime(" %l:%M") %> </br>
 					<%= event.description %> </br> 
 				</div>
 			<% end %>
 		<h1>Past Events:</h1>
 			<% @events.past.each do |event| %>
 				<div class="panel">
-					<%= event.title %> </br>
-					<%= event.date.strftime("%m/%d/%y") %> </br>
-					<%= event.time.strftime("@ %l:%M") %> </br>
+					<h4><%= event.title %></h4>
+					<hr>
+					<%= event.date.strftime("%m/%d/%y") %> 
+					<%= event.time.strftime(" %l:%M") %></br>
 					<%= event.description %> </br> 
 				</div>
 		<% end %>

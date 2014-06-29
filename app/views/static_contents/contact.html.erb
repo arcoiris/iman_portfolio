@@ -1,29 +1,18 @@
 <div class="row">
 
 	<div class="small-8 small-centered column">
-		<div class="icon-bar four-up">
-	  <a class="item">
-	    <img src="../assets/img/icons/footer-foundation-retina.png">
-	    <label>One</label>
-	  </a>
-	  <a class="item">
-	    <img src="../assets/img/icons/footer-foundation-retina.png">
-	    <label>Two</label>
-	  </a>
-	  <a class="item">
-	    <img src="../assets/img/icons/footer-foundation-retina.png">
-	    <label>Three</label>
-	  </a>
-	  <a class="item">
-	    <img src="../assets/img/icons/footer-foundation-retina.png">
-	    <label>Four</label>
-	  </a>
-	</div>
 		<div class="panel">
 		 	<h1>For bookings and inquiries:</h1>
 		 	Send an email to
-			<p><%= @contact_email %></p>
-			<p><%= @contact_number %></p>
+			<h3><%= @contact_email %></h3>			<div class="icon-bar three-up">
+			<%= link_to( image_tag('facebook.png'), "http://facebook.com/loveimanb") %>
+	  <a class="item">
+	    <%= link_to( image_tag('instagram.png'), "http://instagram.com/loveimanb") %>
+	  </a>
+	  <a class="item">
+		  <%= link_to( image_tag('tumblr.png'), "http://tumblr.com/loveimanb") %>
+	  </a>
+	</div>
 		</div>
 	</div>
 </div>
