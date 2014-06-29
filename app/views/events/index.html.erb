@@ -1,12 +1,19 @@
 <div class="row">
 	<div class="small-6 small-centered column">
 		<h1>Upcoming Events:</h1>
-			<% @events.upcoming.each do |event| %>
+			
+			<% if !(@events.upcoming.empty?) %>
+				<% @events.upcoming.each do |event| %>
+					<div class="panel">
+						<%= event.title %> </br>
+						<%= event.date.strftime("%m/%d/%y") %> </br>
+						<%= event.time.strftime(" %l:%M") %> </br>
+						<%= event.description %> </br> 
+					</div>
+				<% end %>
+			<% else %>
 				<div class="panel">
-					<%= event.title %> </br>
-					<%= event.date.strftime("%m/%d/%y") %> </br>
-					<%= event.time.strftime(" %l:%M") %> </br>
-					<%= event.description %> </br> 
+					Check in later for more events.
 				</div>
 			<% end %>
 		<h1>Past Events:</h1>
