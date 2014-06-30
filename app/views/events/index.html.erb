@@ -16,6 +16,7 @@
 					Check in later for more events.
 				</div>
 			<% end %>
+	<% if !(@events.past.empty?) %>
 		<h1>Past Events:</h1>
 			<% @events.past.each do |event| %>
 				<div class="panel">
@@ -26,4 +27,5 @@
 					<%= event.description %> </br> 
 				</div>
 		<% end %>
+	<% end %>
 </div>
