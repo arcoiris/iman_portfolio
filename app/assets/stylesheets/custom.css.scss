@@ -9,7 +9,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 4em;
+	font-size: 4.3em;
+	// margin: 50px;
 }
 
 h2 {
@@ -77,4 +78,17 @@ hr {
 .flex-direction-nav a {
 	width: 60px;
 	height: 60px;
+}
+
+// links 
+a { 
+	color: #FFF;
+}
+
+a:hover {
+	color: yellow;
+}
+
+.email {
+	margin: 10px; 
 }
