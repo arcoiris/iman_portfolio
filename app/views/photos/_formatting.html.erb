@@ -1,10 +1,16 @@
 <div class="row">
 	<ul class="small-block-grid-2 large-block-grid-3">
 		<% @photos.each do |photo| %>
-			<li><div class="panel"><%= link_to photo.photo.url, class: "swipebox", title: "#{photo.lightbox_photographer} #{photo.caption}" do %>
-					<%= image_tag(photo.photo.url(:medium)) %>
-			<% end %></div></li>
+			<li>
+				<div class="panel">
+					<%= link_to photo.photo.url, class: "swipebox", title: "#{photo.lightbox_photographer} #{photo.caption}" do %>
+							<%= image_tag(photo.photo.url(:medium)) %>
+					<% end %>
+				</div>
+			</li>
 		<% end %>
 	</ul>
 </div>
 
+
+<a href=""></a>
