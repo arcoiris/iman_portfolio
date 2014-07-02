@@ -3,9 +3,13 @@ class Photo < ActiveRecord::Base
   validates_attachment_content_type :photo, :content_type => /\Aimage\/.*\Z/
   scope :editorial, -> { where(photo_type: 0) }
   scope :runway, -> { where(photo_type: 1) }
-
+  
   def photo_type_enum
   	{ Editorial: 0, Runway: 1 }
+  end
+
+  def lightbox_photographer 
+  	!(photographer.empty?) ? "#{photographer.strip} (photographer)" : ""; 
   end
 
   rails_admin do 
