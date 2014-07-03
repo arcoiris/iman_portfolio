@@ -18,7 +18,6 @@ class Photo < ActiveRecord::Base
 			field :caption
 			field :photographer
 			field :photo_type
-      field :position
 			field :created_at
 			field :updated_at
 			field :id	
