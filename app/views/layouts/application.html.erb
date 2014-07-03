@@ -18,7 +18,7 @@
 		<nav class="top-bar" data-topbar>
 			<ul class="title-area" data-no-turbolink>
 				<li class="name">
-					<h1><%= link_to("IJB", root_path) %></h1>
+					<h1><%= link_to("IJ", root_path) %></h1>
 				</li>
 			</ul>
 
@@ -81,6 +81,9 @@
 				<% end %>
 				<aside class="left-off-canvas-menu">
 					<ul class="off-canvas-list">
+						<li>
+							<%= link_to("Home", root_path) %>
+						</li>
 						<li><%= link_to("Editorial", editorial_path) %></li>
 						<li><%= link_to("Runway", runway_path) %></li>
 						<li><%= link_to("Events", events_path) %></li>
