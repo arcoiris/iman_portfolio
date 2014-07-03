@@ -1,0 +1,60 @@
+//
+@media only screen and (min-width: 1024px) {
+	.tab-bar {
+			display: none;
+	}
+}
+
+// Tablet Landscape: 1024px
+
+@media only screen and (max-width: 1024px) {
+	.top-bar {
+		display: none;
+	}
+
+	#about { 
+		height: auto;
+	}
+}
+
+
+// Tablet Portrait: 768px
+
+@media only screen and (max-width: 768px) {
+	.event_col h1 {
+		text-align: center;
+	}
+
+	.email h3{ 
+		font-size: 1.5em;
+	}
+}
+
+// Smartphone Landscape: 480px & Smartphone Portrait: 320px
+
+@media only screen and (max-width: 480px) {
+	#about p {
+		text-align: center;
+	}
+
+	h1 { 
+		font-size: 2.5em;
+	}
+
+	.email h3 {
+		font-size: 1em;
+	}
+
+	h4 { 
+		font-size: 1em;
+	}
+
+	.icon-bar img {
+		height: 40px;
+		width: 40px;
+	}
+
+	#swipebox-caption, #swipebox-count {
+		font-size: 1em;
+	}
+}

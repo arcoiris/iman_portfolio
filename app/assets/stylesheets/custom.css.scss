@@ -43,28 +43,6 @@ hr {
 	height: 770px;
 }
 
-/* small displays */
-
-
-@media screen and (max-width: 64.0643em) {
-	.top-bar {
-		display: none;
-	}
-
-	#about { 
-		height: auto;
-	}
-}
-
-
-/* large displays */
-
-@media screen and (min-width: 64.0643em) {
-	.tab-bar {
-		display: none;
-	}
-}
-
 #contact_line { 
 	margin-top: 2em;
 }
@@ -116,3 +94,4 @@ a:hover {
 	background: none;
 	background: rgba(0,0,0,0.9)
 }
+
