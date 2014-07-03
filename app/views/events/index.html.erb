@@ -6,7 +6,7 @@
 				<% @events.upcoming.each do |event| %>
 					<div class="panel">
 						<%= event.title %> </br>
-						<%= event.date.strftime("%m/%d/%y") %> </br>
+						<%= event.date.strftime("%m/%d/%y") %> at </br>
 						<%= event.time.strftime(" %l:%M") %> </br>
 						<%= event.description %> </br> 
 					</div>
@@ -23,7 +23,7 @@
 					<h4><%= event.title %></h4>
 					<hr>
 					<%= event.date.strftime("%m/%d/%y") %> 
-					<%= event.time.strftime(" %l:%M") %></br>
+					at <%= event.time.strftime(" %l:%M") %></br>
 					<%= event.description %> </br> 
 				</div>
 		<% end %>
