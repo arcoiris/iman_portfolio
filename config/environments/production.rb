@@ -77,4 +77,14 @@ ImanPortfolio::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.gmail.com',
+    port: 587,
+    domain: 'http://imanjazminbrown.com',
+    user_name: ENV["PORTFOLIO_USERNAME"],
+    password: ENV["PORTFOLIO_PW"],
+    authentication: 'plain',
+    enable_starttls_auto: true #offers a way to upgrade plain text connection to an encrypted TLS OR SSL
+  }
 end
