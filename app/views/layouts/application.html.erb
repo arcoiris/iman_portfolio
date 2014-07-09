@@ -14,44 +14,44 @@
 	 
   </head>
   <body>
-
-		<nav class="top-bar" data-topbar>
-			<ul class="title-area" data-no-turbolink>
-				<li class="name">
-					<h1><%= link_to("IJB", root_path) %></h1>
-				</li>
-			</ul>
-
-			<section class="top-bar-section">
-			
-			<!-- Left Nav Section -->	
-			<% if current_user %>
-				<ul class="left">
-					<li class="dashboard" data-no-turbolink>
-						<%= link_to("Dashboard", rails_admin.dashboard_path) %>
+  	<div class="fixed">
+			<nav class="top-bar" data-topbar>
+				<ul class="title-area" data-no-turbolink>
+					<li class="name">
+						<h1><%= link_to("IJB", root_path) %></h1>
 					</li>
 				</ul>
-			<% end %>
 
-			<!-- Right Nav Section -->
+				<section class="top-bar-section">
+				
+				<!-- Left Nav Section -->	
+				<% if current_user %>
+					<ul class="left">
+						<li class="dashboard" data-no-turbolink>
+							<%= link_to("Dashboard", rails_admin.dashboard_path) %>
+						</li>
+					</ul>
+				<% end %>
 
-				<ul class="right">
-					<li class="editorial">
-						<%= link_to("Editorial", editorial_path) %>
-					</li>
-					<li class="runway">
-						<%= link_to("Runway", runway_path) %>		
-					</li>
-					<li class="events">
-						<%= link_to("Events", events_path) %>
-					</li>
-					<li class="contact">
-						<%= link_to("Contact", contact_path) %>
-					</li>
-				</ul>
-		</section>
-		</nav>
+				<!-- Right Nav Section -->
 
+					<ul class="right">
+						<li class="editorial">
+							<%= link_to("Editorial", editorial_path) %>
+						</li>
+						<li class="runway">
+							<%= link_to("Runway", runway_path) %>		
+						</li>
+						<li class="events">
+							<%= link_to("Events", events_path) %>
+						</li>
+						<li class="contact">
+							<%= link_to("Contact", contact_path) %>
+						</li>
+					</ul>
+			</section>
+			</nav>
+		</div>
 		<!-- For mobile/small screens side menu -->
 		<div class="off-canvas-wrap">
 			<div class="inner-wrap">
