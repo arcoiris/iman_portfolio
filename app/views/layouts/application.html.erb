@@ -23,33 +23,33 @@
 				</ul>
 
 				<section class="top-bar-section">
-				
-				<!-- Left Nav Section -->	
-				<% if current_user %>
-					<ul class="left">
-						<li class="dashboard" data-no-turbolink>
-							<%= link_to("Dashboard", rails_admin.dashboard_path) %>
-						</li>
-					</ul>
-				<% end %>
+					<!-- Left Nav Section -->	
+					<% if current_user %>
+						<ul class="left">
+							<li class="dashboard" data-no-turbolink>
+								<%= link_to("Dashboard", rails_admin.dashboard_path) %>
+							</li>
+						</ul>
+					<% end %>
 
-				<!-- Right Nav Section -->
+					<!-- Right Nav Section -->
 
-					<ul class="right">
-						<li class="editorial">
-							<%= link_to("Editorial", editorial_path) %>
-						</li>
-						<li class="runway">
-							<%= link_to("Runway", runway_path) %>		
-						</li>
-						<li class="events">
-							<%= link_to("Events", events_path) %>
-						</li>
-						<li class="contact">
-							<%= link_to("Contact", contact_path) %>
-						</li>
-					</ul>
-			</section>
+						<ul class="right">
+							<li class="editorial">
+								<%= link_to("Editorial", editorial_path) %>
+							</li>
+							<li class="runway">
+								<%= link_to("Runway", runway_path) %>		
+							</li>
+							<li class="events">
+								<%= link_to("Events", events_path) %>
+							</li>
+							<li class="contact">
+								<%= link_to("Contact", contact_path) %>
+							</li>
+							<li><a href="#" data-reveal-id="stats_modal">Stats</a></li>
+						</ul>
+				</section>
 			</nav>
 		</div>
 		<!-- For mobile/small screens side menu -->
@@ -91,6 +91,25 @@
 					</ul>
 				</aside>
 
+				<!-- modal panel -->
+				<div id="stats_modal" class="reveal-modal" data-reveal>
+					<h4>Stats: Iman J. Brown</h4>
+					<p>
+						Height: 5'10''
+						Bust: 34B
+						Waist: 24
+						Hips: 34.5
+						Dress: 2/4
+					</p>
+					<p>
+						Eyes: Brown
+						Hair: Blonde
+					</p>
+					<p>
+					High fashion - Runway - Print - Editorial - Commercial - Fit - Catalog
+					</p>
+					<a class="close-reveal-modal">&#215;</a>
+				</div>
     		<%= yield %>
     		
     		<a class="exit-off-canvas"></a>

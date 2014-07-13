@@ -44,7 +44,6 @@ hr {
 }
 
 // contact 
-
 #contact_line { 
 	margin-top: 2em;
 }
@@ -53,6 +52,17 @@ hr {
 	font-size: 2em;
 	margin: 10px 10px 5px 10px;
 }
+
+
+// stats modal
+#stats_modal { 
+	text-align: center;
+	background-color: #000;
+}
+.close-reveal-modal {
+	color: #fff;
+}
+
 
 // flexslider
 .flexslider {
