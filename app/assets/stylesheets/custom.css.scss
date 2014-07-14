@@ -10,7 +10,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-size: 4.3em;
-	// margin: 50px;
 }
 
 h2 {
@@ -28,8 +27,14 @@ h4 {
 hr {
 	border: solid 1.5px yellow;
 }
+
+.row {
+	margin-top: 70px;
+}
+
 .panel {
 	background-color: rgba(0,0,0,0.8);
+	text-align: center;
 }
 
 #about p {
@@ -113,6 +118,7 @@ a:hover {
 }
 
 // tab-bar 
-// remove mystery dead link that appears only in production
-li .left-off-canvas-toggle.menu-icon { display: none; }
-
+// remove mystery dead-end link that appears only in production
+li .left-off-canvas-toggle.menu-icon { 
+	display: none; 
+}
