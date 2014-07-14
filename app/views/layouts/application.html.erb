@@ -55,13 +55,13 @@
 		<!-- For mobile/small screens side menu -->
 		<div class="off-canvas-wrap">
 			<div class="inner-wrap">
-				<nav class="tab-bar fixed">
+				<nav class="tab-bar">
 					<section class="left-small">
 						<a class="left-off-canvas-toggle menu-icon" ><span></span></ata>
 					</section>
 				</nav>
 
-				<% if current_user %> 
+			<% if current_user %> 
 					<div data-alert class="alert-box info radius">
 						Currently logged in as <%= current_user.email %>
 						<%= link_to "Log out", logout_path %>
