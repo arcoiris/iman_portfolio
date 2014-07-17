@@ -5,11 +5,12 @@
 			<% if !(@events.upcoming.empty?) %>
 				<% @events.upcoming.each do |event| %>
 					<div class="panel">
-						<%= event.title %> </br>
-						<%= event.date.strftime("%m/%d/%y") %> at </br>
-						<%= event.time.strftime(" %l:%M") %> </br>
+						<h4><%= event.title %></h4>
+						<hr>
+						<%= event.date.strftime("%m/%d/%y") %> 
+						<%= at event.time.strftime(" %l:%M") if event.time != nil %></br>
 						<%= event.description %> </br> 
-					</div>
+				</div>
 				<% end %>
 			<% else %>
 				<div class="panel">
