@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui-1.10.4.custom
-//= require swipebox
+//= require jquery.swipebox
 //= require foundation
 //= require jquery.flexslider
 //= require turbolinks

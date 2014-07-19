@@ -40,7 +40,7 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 
 	gem 'rails_admin', '~> 0.6.2'
 
-	gem 'swipebox'
+	# gem 'swipebox'
 
 	gem 'flexslider', '~> 2.2.0'
 
