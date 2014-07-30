@@ -23,6 +23,6 @@ $(function(){ $(document).foundation(); });
 $( '.swipebox' ).swipebox();
 $(window).load(function() {
   $('.flexslider').flexslider({
-  		sliderShowSpeed: 4000
+  		slideshowSpeed: 2000
   	});
 });

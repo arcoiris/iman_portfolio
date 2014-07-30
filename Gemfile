@@ -42,7 +42,7 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 
 	# gem 'swipebox'
 
-	gem 'flexslider', '~> 2.2.0'
+	# gem 'flexslider', '~> 2.2.0'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
