@@ -31,7 +31,7 @@ html.swipebox-html.swipebox-touch {
   display: none;
 }
 #swipebox-slider .slide {
-  background: url(../img/loader.gif) no-repeat center center;
+  background: image-url('loader.gif') no-repeat center center;
   height: 100%;
   width: 100%;
   line-height: 1px;
@@ -100,7 +100,7 @@ html.swipebox-html.swipebox-touch {
 #swipebox-action #swipebox-prev,
 #swipebox-action #swipebox-next,
 #swipebox-action #swipebox-close {
-  background-image: url(../img/icons.png);
+  background-image: image-url('icons.png');
   background-repeat: no-repeat;
   border: none !important;
   text-decoration: none !important;
