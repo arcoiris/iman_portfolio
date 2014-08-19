@@ -15,7 +15,25 @@ RailsAdmin.config do |config|
   # config.audit_with :paper_trail, 'User', 'PaperTrail::Version' # PaperTrail >= 3.0.0
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
+  config.model 'Event' do |config|
+    edit do  
+      field :title
+      field :date
+      field :time
+      field :description, :wysihtml5
+    end
+  end
 
+  config.model 'Photo' do |config|
+    field :photo  
+    field :caption
+    field :photographer
+    field :photo_type
+    field :created_at
+    field :updated_at
+    field :id 
+  end
+  
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory

@@ -14,16 +14,4 @@ class Photo < ActiveRecord::Base
   def lightbox_photographer 
   	!(photographer.empty?) ? "#{photographer.strip} (photographer)" : ""; 
   end
-
-  rails_admin do 
-		list do 
-			field :photo  
-			field :caption
-			field :photographer
-			field :photo_type
-			field :created_at
-			field :updated_at
-			field :id	
-		end
-  end
 end

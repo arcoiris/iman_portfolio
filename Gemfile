@@ -40,6 +40,8 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 
 	gem 'rails_admin', '~> 0.6.2'
 
+	gem 'bootstrap-wysihtml5-rails', '0.3.1.24'
+
 	# gem 'swipebox'
 
 	# gem 'flexslider', '~> 2.2.0'
@@ -69,6 +71,4 @@ end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
  gem 'therubyracer', platforms: :ruby
-
-
 

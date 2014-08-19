@@ -1,6 +1,6 @@
 body {
 	color: #FFF; /* Panel text is still partially controlled by the foundation variables*/
-	background-image: image-url('stripes.jpg');
+	background-image: image-url('rainbow.jpg');
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -82,6 +82,10 @@ hr {
 // links 
 a { 
 	color: #FFF;
+}
+
+.event_col a {
+	text-shadow: 0.5px 0.5px 0.5px yellow; 
 }
 
 a:hover {

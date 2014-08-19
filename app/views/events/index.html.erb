@@ -9,7 +9,7 @@
 						<hr>
 						<%= event.date.strftime("%m/%d/%y") %> 
 						at <%= event.time.strftime(" %l:%M") if event.time != nil %></br>
-						<%= event.description %> </br> 
+						<%= event.description.html_safe %> </br> 
 				</div>
 				<% end %>
 			<% else %>
@@ -25,7 +25,7 @@
 					<hr>
 					<%= event.date.strftime("%m/%d/%y") %> 
 					at <%= event.time.strftime(" %l:%M") %></br>
-					<%= event.description %> </br> 
+					<%= event.description.html_safe %> </br> 
 				</div>
 		<% end %>
 	<% end %>
