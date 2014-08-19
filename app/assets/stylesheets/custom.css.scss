@@ -1,6 +1,6 @@
 body {
 	color: #FFF; /* Panel text is still partially controlled by the foundation variables*/
-	background-image: image-url('rainbow.jpg');
+	background-image: image-url('splatter.jpg');
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -74,6 +74,9 @@ hr {
 	background: none;	
 }
 
+#flex_panel {
+	height: 770px; // set height equal to about panel
+}
 .flex-direction-nav a {
 	width: 0px;
 	height: 0px;
