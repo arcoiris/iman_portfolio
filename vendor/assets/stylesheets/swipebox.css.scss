@@ -109,6 +109,9 @@ html.swipebox-html.swipebox-touch {
   width: 50px;
   height: 50px;
   top: 0;
+  &.svg {
+    background-image: asset-url('swipebox-icons.svg');
+  }
 }
 #swipebox-action #swipebox-prev {
   background-position: -32px 13px;
