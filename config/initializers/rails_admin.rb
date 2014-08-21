@@ -34,6 +34,12 @@ RailsAdmin.config do |config|
     field :id 
   end
   
+  config.model 'User' do |config|
+    field :email
+    field :password
+    field :password_confirmation
+  end
+  
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
