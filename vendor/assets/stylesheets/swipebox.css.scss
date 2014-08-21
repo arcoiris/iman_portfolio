@@ -110,7 +110,7 @@ html.swipebox-html.swipebox-touch {
   height: 50px;
   top: 0;
   &.svg {
-    background-image: asset-url('swipebox-icons.svg');
+    background-image: font-url('swipebox-icons.svg');
   }
 }
 #swipebox-action #swipebox-prev {
