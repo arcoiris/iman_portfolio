@@ -22,6 +22,7 @@ module ImanPortfolio
     # config.i18n.default_locale = :de
 
     # config.assets.precompile += ["assets/fonts*"]
+    app.config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')  
     config.assets.precompile << %r(swipebox-[\w]+\.(?:png|svg|gif)$)
   end
 end
