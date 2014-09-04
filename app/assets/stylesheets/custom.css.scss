@@ -82,6 +82,26 @@ hr {
 	height: 0px;
 }
 
+// swipebox 
+#swipebox-caption, #swipebox-count {
+	font-family: 'Josefin sans', sans-serif;
+	color: #000;
+	font-size: 24px;
+	text-shadow: 0.5px 0.5px 0.5px black;
+	overflow-y: auto;
+}
+
+#swipebox-caption {
+	border: 1px 1px #ccc;
+	background: none; 
+	background-color: #0d0d0d;
+}
+
+#swipebox-overlay {
+	background: none;
+	background: rgba(0,0,0,0.9)
+}
+
 // links 
 a { 
 	color: #FFF;
