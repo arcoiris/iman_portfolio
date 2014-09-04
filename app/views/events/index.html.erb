@@ -3,7 +3,7 @@
 		<h1>Upcoming Events:</h1>
 			
 			<% if !(@events.upcoming.empty?) %>
-				<% @events.upcoming.each do |event| %>
+				<% @events.upcoming.order(date: :desc).each do |event| %>
 					<div class="panel">
 						<h4><%= event.title %></h4>
 						<hr>
@@ -19,7 +19,7 @@
 			<% end %>
 	<% if !(@events.past.empty?) %>
 		<h1>Past Events:</h1>
-			<% @events.past.each do |event| %>
+			<% @events.past.order(date: :desc).each do |event| %>
 				<div class="panel">
 					<h4><%= event.title %></h4>
 					<hr>
