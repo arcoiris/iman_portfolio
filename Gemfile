@@ -42,7 +42,7 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 
 	gem 'bootstrap-wysihtml5-rails', '0.3.1.24'
 
-	# gem 'swipebox'
+	gem 'swipebox'
 
 	# gem 'flexslider', '~> 2.2.0'
 
