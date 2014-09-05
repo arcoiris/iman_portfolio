@@ -14,46 +14,8 @@
 	 
   </head>
   <body>
-  	<div class="fixed" data-no-turbolink>
-			<nav class="top-bar">
-				<ul class="title-area">
-					<li class="name">
-						<h1><%= link_to("IJB", root_path) %></h1>
-					</li>
-				</ul>
 
-				<section class="top-bar-section">
-					<!-- Left Nav Section -->	
-					<% if current_user %>
-						<ul class="left">
-							<li class="dashboard" data-no-turbolink>
-								<%= link_to("Dashboard", rails_admin.dashboard_path) %>
-							</li>
-						</ul>
-					<% end %>
-
-					<!-- Right Nav Section -->
-
-						<ul class="right" data-no-turbolink>
-							<li class="editorial">
-								<%= link_to("Editorial", editorial_path) %>
-							</li>
-							<li class="runway">
-								<%= link_to("Runway", runway_path) %>		
-							</li>
-							<li class="events">
-								<%= link_to("Events", events_path) %>
-							</li>
-							<li class="contact">
-								<%= link_to("Contact", contact_path) %>
-							</li>
-							<li>
-								<a href="#" data-reveal-id="stats_modal">Stats</a>
-							</li>
-						</ul>
-				</section>
-			</nav>
-		</div>
+  	<%= render 'layouts/top_navigation' %>
 		<!-- For mobile/small screens side menu -->
 		<div class="off-canvas-wrap">
 			<div class="inner-wrap">
@@ -114,8 +76,7 @@
 					</p>
 					<a class="close-reveal-modal">&#215;</a>
 				</div>
-    		<%= yield %>
-    		
+    		<%= yield %><!-- off-canvas must wrap around yielded contents of the page in order to format properly -->
     		<a class="exit-off-canvas"></a>
 			</div>
 		</div>
