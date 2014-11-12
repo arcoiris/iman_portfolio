@@ -4,4 +4,15 @@
 - change second photo on slideshow to last 
 - add slideshow photo uploading feature
 - multiple upload photo feature
-- positioning to number  
+- positioning to number 
+- add message to photos page for when there are no photos uploaded.
+- get rid of slideshow, one pic only
+- hair to black (make stats editable)
+- Get rid of "stats" from the stats modal
+- "Booking and Inquiries" no "Send email to"
+- "New York | Paris" 
+- Model mayhem icon
+- Background 
+- Disable captions for editorials
+- Remove colons
+- Debug about not reloading
