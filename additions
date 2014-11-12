@@ -14,5 +14,5 @@
 - Model mayhem icon
 - Background 
 - Disable captions for editorials
-- Remove colons
-- Debug about not reloading
+- Remove colons X
+- Debug about not reloading X (just took awhile for the changes to reflect in production)
