@@ -14,15 +14,9 @@
 //= require jquery_ujs
 //= require jquery-ui-1.10.4.custom
 //= require foundation
-//= require jquery.flexslider
 //= require swipebox
 //= require turbolinks
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
 $( '.swipebox' ).swipebox();
-$(window).load(function() {
-  $('.flexslider').flexslider({
-  		slideshowSpeed: 2000
-  	});
-});
