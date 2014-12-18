@@ -28,10 +28,10 @@ class PhotosController < ApplicationController
 	end
 
 	def editorial
-		@photos = Photo.editorial
+		@photos = Photo.editorial.order(created_at: :desc)
 	end
 
 	def runway
-		@photos = Photo.runway
+		@photos = Photo.runway.order(created_at: :desc)
 	end
 end

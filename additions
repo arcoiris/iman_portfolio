@@ -3,7 +3,6 @@
 - drag and drop 
 - change second photo on slideshow to last 
 - add slideshow photo uploading feature
-- multiple upload photo feature
 - positioning to number 
 - add message to photos page for when there are no photos uploaded.
 - get rid of slideshow, one pic only
@@ -16,3 +15,4 @@
 - Disable captions for editorials 
 - Remove colons X
 - Debug about not reloading X (just took awhile for the changes to reflect in production)
+- *********** NEWEST on top
